@@ -1,10 +1,7 @@
-
 /*
  *   Programm zum berechnen der Distanz im "Avorion distance Calculator"
  *
- *   (c) Adam Jaquet 2022 - ionivation.com
- * 
- * 
+ *   (c) Adam Skoarczak 2022 - ionivation.com
  * 
  */
 
@@ -19,7 +16,9 @@ const LASTDEV = '2022-01-13 19:40:10 Thursday';
 // debug-modus ON/ OFF
 const DEBUG = false;
 
+//
 // Ab hier nichts mehr konfigurieren!
+//
 
 function start() {
      /* sollte onload vom Body des HTML Dokuments geladen werden

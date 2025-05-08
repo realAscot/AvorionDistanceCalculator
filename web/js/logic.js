@@ -8,12 +8,12 @@
  */
 
 // bei Änderungen Version eintragen!
-const MAJOR = 1;  // +1 wenn inkompatibel zur vorherigen Version
-const MINOR = 1;  // +1 wenn neue Funktionen implementiert
-const PATCH = 4;  // +1 wenn Änderungen ohne neue Funktionen
+const MAJOR = 2;  // +1 wenn inkompatibel zur vorherigen Version
+const MINOR = 0;  // +1 wenn neue Funktionen implementiert
+const PATCH = 0;  // +1 wenn Änderungen ohne neue Funktionen
 
 // letzte Veröffentlichung
-const LASTDEV = '2025-05-01 20:00 Thursday';
+const LASTDEV = '2025-05-08';
 
 // debug-modus ON/ OFF
 const DEBUG = false;
@@ -31,12 +31,11 @@ function start() {
 
 function goVersion() {
      // Es wird die Version des Programs generiert und die ID=version im HTML geaendert.
-     const VERSION = MAJOR + "." + MINOR + "." + PATCH;
-     version.innerHTML += `
+    const VERSION = MAJOR + "." + MINOR + "." + PATCH;
+    classVersion.innerHTML += `
      Script-Version: ${VERSION}
-     ( <a href="https://www.ionivation.com">Ionivation.com</a> ) (C) 2022-2025 Adam Skotarczak [![GitHub release (latest by semver)](https://img.shields.io/github/v/release/realAscot/AvorionDistanceCalculator?sort=semver)](https://github.com/realAscot/AvorionDistanceCalculator/releases)
-
-     `;
+     ( <a href="https://www.ionivation.com">Ionivation.com</a> ) (C) 2022-2025 Adam Skotarczak 
+    `;
 }
 
 function calculate() {
@@ -54,13 +53,23 @@ function calculate() {
      }
 }
 
+/**
+ * Berechnet die Entfernung zum Mittelpunkt der Galaxie
+ * 
+ * @param {*} INT x 
+ * @param {*} INT y 
+ * @returns INT (Entfernung)
+ */
 function goDistToCenter(x, y){     
      // Berechnet Entfernung zum Zentrum und schickt Ergebnis zurück
      let result;
      
      result = Math.round (Math.sqrt( Math.round(x * x) + Math.round(y * y) ));
      
-     // Nur zum debuggen der Ergebnisse wenn DEBUG=true: (1.1.0)
+     /**
+      * Nur zum debuggen der Ergebnisse wenn DEBUG=true: (seit 1.1.0)
+      * (muss auf .env umgestellt werden!)
+      */
      if (DEBUG){
           console.log("");
           console.log("Berechnungen ohne Rundungen aus goDistToCenter()")

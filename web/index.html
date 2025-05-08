@@ -3,27 +3,35 @@
   <head lang="en">
     <meta charset="UTF-8">
     <meta name="author" content="Adam Skotarczak">
-    
-    <title>Avorion distance calculator</title>
+    <!-- -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data:;
+               object-src 'none';">
+
+    <title>Avorion Distance Calculator 2.0</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <!-- Material Design Lite begin -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-deep_orange.min.css" /> 
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="css/material.css" />
+    <script defer src="js/libs/material.js"></script>
+
     <!-- Material Design Lite end -->
 
-<!-- jQuery Einbindung:
+<!-- jQuery Einbindung: -->
 
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
     <script>
     $(document).ready(function(){
         /* Hier der jQuery-Code */
     });
     </script>
--->
 
     <!--Hier wird die externe JavaScript-Datei zum berechnen eingebunden -->
+    <script src="js/logic.js"></script>
     <script src="js/main.js"></script>
   </head>
 <body onload="start();">
@@ -46,7 +54,7 @@
  
       <!-- Numeric Textfield with Floating Label -->
       <div class="Titel">
-        Avorion distance calculator
+        Avorion Distance Calculator 2.0
       </div>
       <div class="Feldbeschreibung">
         Starting coordinates:
@@ -127,10 +135,17 @@
 
       <hr>
       <div>
-        <p class="version" id="version">
+        <p class="classVersion" id="classVersion">
         </p>
-      <!-- Your content goes here end -->
       </div>
+      <!-- Debug IPC Test
+      <div>
+        <button id="ipc-test-btn">IPC-Test starten</button>
+          <p id="ipc-test-result"></p>
+      </div>
+      -->
+      
+      <!-- Your content goes here end -->
     </div>
   </main>
 </div>

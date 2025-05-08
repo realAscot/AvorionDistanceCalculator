@@ -1,6 +1,25 @@
-# AvorionDistanceCalculator
+# **Avorion Distance Calculator 2.0**
 
-![Screenshot](./assets/screenshot.png)  
+[![GitHub release (latest by semver)](https://img.shields.io/github/v/release/realAscot/AvorionDistanceCalculator?sort=semver)](https://github.com/realAscot/AvorionDistanceCalculator/releases)
+
+![ADC-Logo](./assets/512x512.png)  
+
+## Inhalt
+
+- [**Avorion Distance Calculator 2.0**](#avorion-distance-calculator-20)
+  - [Inhalt](#inhalt)
+  - [Was ist anders und was neu?](#was-ist-anders-und-was-neu)
+  - [Installation](#installation)
+    - [Linux](#linux)
+    - [Windows](#windows)
+    - [MAC](#mac)
+  - [Geplante zukünftige Features](#geplante-zukünftige-features)
+
+---
+
+## Was ist anders und was neu?
+
+---
 
 **HTML/CSS/JavaScript web application**  
 
@@ -16,7 +35,17 @@ Nutzt jQuery und  Material Design Lite
 
 ## Installation
 
-> keine Installation nötig, einfach die [index.html](index.html) im Browser öffnen und loslegen.  
+> **[PLATZHALTER]**  
+
+### Linux
+
+### Windows
+
+### MAC
+
+> - keine Ahnung, habe kein MAC aber wäre an Feedback interessiert!
+
+---
 
 ## Geplante zukünftige Features
 

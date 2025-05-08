@@ -1,0 +1,17 @@
+{
+    // Diese Erweiterungen werden empfohlen, wenn das Projekt geöffnet wird
+    "recommendations": [
+      "dbaeumer.vscode-eslint",              // ESLint Linter
+      "esbenp.prettier-vscode",              // Prettier Formatter
+      "christian-kohler.path-intellisense",  // Autovervollständigung für Pfade
+      "xabikos.javascriptsnippets",          // JS-Snippets
+      "dsznajder.es7-react-js-snippets",     // Nützlich für spätere Projekte
+      "formulahendry.auto-close-tag",        // HTML/JSX Support
+      "formulahendry.auto-rename-tag",       // HTML/JSX Support
+      "ms-vscode.vscode-typescript-next",    // Aktuelle TS-Features (optional)
+    ],
+  
+    // Optional: Erweiterungen, die eher nicht genutzt werden sollten
+    "unwantedRecommendations": []
+  }
+  

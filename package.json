@@ -1,5 +1,5 @@
 {
-  "name": "avoriondistancecalculator",
+  "name": "adc",
   "version": "2.0.0",
   "description": "Electron-basierter Avorion Distance Calculator",
   "main": "electron/main.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AJaquet/AvorionDistanceCalculator.git"
+    "url": "git+https://github.com/realAscot/AvorionDistanceCalculator.git"
   },
   "author": "Adam Skotarczak",
   "license": "MIT",
@@ -18,9 +18,13 @@
     "electron": "^29.4.6",
     "electron-builder": "^24.13.3"
   },
+  "bugs": {
+    "url": "https://github.com/realAscot/AvorionDistanceCalculator/issues"
+  },
+  "homepage": "https://github.com/realAscot/AvorionDistanceCalculator#readme",
   "build": {
     "appId": "com.realascot.avoriondistance",
-    "productName": "Avorion Distance Calculator",
+    "productName": "Avorion Distance Calculator 2.0",
     "directories": {
       "output": "dist"
     },
@@ -37,5 +41,8 @@
       "icon": "assets/icon.png",
       "target": "nsis"
     }
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
   }
 }

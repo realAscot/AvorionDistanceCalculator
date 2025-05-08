@@ -10,10 +10,10 @@
 // bei Änderungen Version eintragen!
 const MAJOR = 1;  // +1 wenn inkompatibel zur vorherigen Version
 const MINOR = 1;  // +1 wenn neue Funktionen implementiert
-const PATCH = 4;  // +1 wenn Änderungen ohne neue Funktionen
+const PATCH = 5;  // +1 wenn Änderungen ohne neue Funktionen
 
 // letzte Veröffentlichung
-const LASTDEV = '2025-05-01 20:00 Thursday';
+const LASTDEV = '2025-05-09 20:00 Thursday';
 
 // debug-modus ON/ OFF
 const DEBUG = false;
@@ -34,8 +34,7 @@ function goVersion() {
      const VERSION = MAJOR + "." + MINOR + "." + PATCH;
      version.innerHTML += `
      Script-Version: ${VERSION}
-     ( <a href="https://www.ionivation.com">Ionivation.com</a> ) (C) 2022-2025 Adam Skotarczak [![GitHub release (latest by semver)](https://img.shields.io/github/v/release/realAscot/AvorionDistanceCalculator?sort=semver)](https://github.com/realAscot/AvorionDistanceCalculator/releases)
-
+     ( <a href="https://www.ionivation.com">Ionivation.com</a> ) (C) 2022-2025 Adam Skotarczak
      `;
 }
 

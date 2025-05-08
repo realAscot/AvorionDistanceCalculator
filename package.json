@@ -1,0 +1,41 @@
+{
+  "name": "avoriondistancecalculator",
+  "version": "2.0.0",
+  "description": "Electron-basierter Avorion Distance Calculator",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dev": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJaquet/AvorionDistanceCalculator.git"
+  },
+  "author": "Adam Skotarczak",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.4.6",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.realascot.avoriondistance",
+    "productName": "Avorion Distance Calculator",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "web/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      "web/"
+    ],
+    "win": {
+      "icon": "assets/icon.png",
+      "target": "nsis"
+    }
+  }
+}

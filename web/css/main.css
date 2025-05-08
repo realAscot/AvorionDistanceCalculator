@@ -1,0 +1,41 @@
+.version {
+    font-size:smaller;
+    padding-left:20px;
+}
+
+.Feldbeschreibung {
+    font-size:medium;
+}
+
+.Titel {
+    font-size:xx-large;
+    padding-top: 40px;
+    font-style: italic;
+    padding-bottom:30px;
+}
+
+.Ergebniss {
+    font-size:x-large;
+    padding:10px;
+}
+
+.tabelle-ergebniss {
+    border-width: medium;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.page-content {
+    padding: 0px 30px;
+}
+
+.distaceTableColumn {
+    padding: 5px;
+    color:#444444;
+    font-weight: bold;
+}
+
+.distanztabelle {
+    border-collapse: collapse;
+    width: 90%;
+}

@@ -1,0 +1,20 @@
+{
+    // Immer Semikolon am Ende jeder Anweisung
+    "semi": true,
+  
+    // Einfache Anführungszeichen statt doppelte
+    "singleQuote": true,
+  
+    // Maximal 100 Zeichen pro Zeile
+    "printWidth": 100,
+  
+    // 2 Leerzeichen pro Einrückung
+    "tabWidth": 2,
+  
+    // Immer trailing comma, wenn erlaubt (z. B. in Arrays)
+    "trailingComma": "es5",
+  
+    // Kein Klammerumbruch bei einfachen Arrow-Functions
+    "arrowParens": "avoid"
+  }
+  

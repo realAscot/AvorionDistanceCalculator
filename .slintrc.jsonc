@@ -1,0 +1,21 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      // Eigene Regeln hier, z. B.:
+      "semi": ["error", "always"],
+      "quotes": ["warn", "single"]
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier" // muss immer zuletzt stehen
+    ]  
+  }
+

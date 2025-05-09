@@ -3,51 +3,31 @@
   <head lang="en">
     <meta charset="UTF-8">
     <meta name="author" content="Adam Skotarczak">
-    <!-- -->
+    <!-- 
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
                script-src 'self';
                style-src 'self' 'unsafe-inline';
                img-src 'self' data:;
                object-src 'none';">
-
+    -->
     <title>Avorion Distance Calculator 2.0</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-    <!-- Material Design Lite begin -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-    <link rel="stylesheet" href="css/material.css" />
-    <script defer src="js/libs/material.js"></script>
-
-    <!-- Material Design Lite end -->
-
-<!-- jQuery Einbindung: -->
-
-    <script src="js/libs/jquery-3.7.1.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        /* Hier der jQuery-Code */
-    });
-    </script>
-
-    <!--Hier wird die externe JavaScript-Datei zum berechnen eingebunden -->
+    <!--Programmlogik: -->
     <script src="js/logic.js"></script>
     <script src="js/main.js"></script>
   </head>
 <body onload="start();">
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">&nbsp;</span>
-    <nav class="mdl-navigation">
-      
-      <!-- left Menue
-      <a class="mdl-navigation__link" href="">Link</a>
-      -->
+<div class="layout">
+  <div class="layout__drawer">
+    <span class="layout-title">&nbsp;</span>
+    <nav class="navigation">
    
     </nav>
   </div>
-  <main class="mdl-layout__content">
+  <main class="layout__content">
     <div class="page-content">
 
       <!-- Your content goes here begin -->
@@ -61,20 +41,20 @@
       </div>
       <form action="#" onsubmit="calculate(); return false;">
 
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="koordinateX">
-          <label class="mdl-textfield__label" for="koordinateX">Koordinate X ...</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
+        <div class="input">
+          <input class="textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="koordinateX">
+          <label class="textfield__label" for="koordinateX">Koordinate X ...</label>
+          <span class="textfield__error">Input is not a number!</span>
         </div>
 
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="koordinateY">
-          <label class="mdl-textfield__label" for="koordinateY">Koordinate Y ...</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
+        <div class="input">
+          <input class="textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="koordinateY">
+          <label class="textfield__label" for="koordinateY">Koordinate Y ...</label>
+          <span class="textfield__error">Input is not a number!</span>
         </div>
 
         <!-- Raised button with ripple -->
-        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Calculate</button>
+        <button type="submit" class="button_calculate">Calculate</button>
       </form>
       <div style="padding-top: 25px;">
         <table class="tabelle-ergebniss">

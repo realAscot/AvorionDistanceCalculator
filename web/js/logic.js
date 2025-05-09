@@ -13,7 +13,7 @@ const MINOR = 0;  // +1 wenn neue Funktionen implementiert
 const PATCH = 0;  // +1 wenn Änderungen ohne neue Funktionen
 
 // letzte Veröffentlichung
-const LASTDEV = '2025-05-08';
+const LASTDEV = '2025-05-09';
 
 // debug-modus ON/ OFF
 const DEBUG = false;

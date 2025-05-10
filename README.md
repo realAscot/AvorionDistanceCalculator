@@ -1,6 +1,8 @@
 # AvorionDistanceCalculator
 
-![Screenshot](./assets/screenshot.png)  
+[![GitHub release (latest by semver)](https://img.shields.io/github/v/release/realAscot/AvorionDistanceCalculator?sort=semver)](https://github.com/realAscot/AvorionDistanceCalculator/releases)  
+
+![LOGO](./assets/logo-512x512.png)  
 
 **HTML/CSS/JavaScript web application**  
 
@@ -10,7 +12,22 @@ Dieser ist unter der Adresse <https://www.ionivation.com/avorion-entfernungsrech
 
 Nutzt jQuery und  Material Design Lite  
 
-[![GitHub release (latest by semver)](https://img.shields.io/github/v/release/realAscot/AvorionDistanceCalculator?sort=semver)](https://github.com/realAscot/AvorionDistanceCalculator/releases)
+---
+
+## Inhalt
+
+- [AvorionDistanceCalculator](#avoriondistancecalculator)
+  - [Inhalt](#inhalt)
+  - [Screenshot](#screenshot)
+  - [Installation](#installation)
+  - [Geplante zukünftige Features](#geplante-zukünftige-features)
+
+---
+
+## Screenshot
+
+**Screenshot (v1.1.3)**  
+![Screenshot](./assets/screenshot.png)  
 
 ---
 
@@ -18,7 +35,11 @@ Nutzt jQuery und  Material Design Lite
 
 > keine Installation nötig, einfach die [index.html](index.html) im Browser öffnen und loslegen.  
 
+---
+
 ## Geplante zukünftige Features
 
 - [ ] **Berechnung zwischen zwei individuellen Punkten auf der Karte**  
   - feature/route  
+
+---

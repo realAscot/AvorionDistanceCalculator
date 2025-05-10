@@ -9,8 +9,8 @@
 
 // bei Änderungen Version eintragen!
 const MAJOR = 1;  // +1 wenn inkompatibel zur vorherigen Version
-const MINOR = 1;  // +1 wenn neue Funktionen implementiert
-const PATCH = 5;  // +1 wenn Änderungen ohne neue Funktionen
+const MINOR = 2;  // +1 wenn neue Funktionen implementiert
+const PATCH = 0;  // +1 wenn Änderungen ohne neue Funktionen
 
 // letzte Veröffentlichung
 const LASTDEV = '2025-05-10';
@@ -69,10 +69,9 @@ function calculate() {
      // Schickt die Daten zur Berechnung an die Funktion und schreibt in die ID (id="result") des HTML Dokuments
      if (!isNaN(x) && !isNaN(y)){ // wenn x unc y Werte enthalten
           result.innerHTML = `
-               from [${x}:${y}] = ${goDistToCenter(x, y)} sectors to Center
+               ${goDistToCenter(x, y)} sector(s) to Center 0:0
           `;
-          koordinateX.value = "";
-          koordinateY.value = "";
+          // koordinateX.value = ""; koordinateY.value = "";
      }
 }
 

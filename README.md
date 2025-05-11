@@ -51,3 +51,5 @@ Nutzt jQuery und  Material Design Lite
 
 - [ ] **Berechnung zwischen zwei individuellen Punkten auf der Karte**  
   - feature/route  
+
+---

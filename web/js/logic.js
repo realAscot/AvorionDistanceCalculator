@@ -11,9 +11,6 @@
 const MAJOR = 1;  // +1 wenn inkompatibel zur vorherigen Version
 const MINOR = 2;  // +1 wenn neue Funktionen implementiert
 const PATCH = 0;  // +1 wenn Änderungen ohne neue Funktionen
-const MAJOR = 2;  // +1 wenn inkompatibel zur vorherigen Version
-const MINOR = 0;  // +1 wenn neue Funktionen implementiert
-const PATCH = 0;  // +1 wenn Änderungen ohne neue Funktionen
 
 // letzte Veröffentlichung
 const LASTDEV = '2025-05-10';

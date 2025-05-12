@@ -8,8 +8,8 @@
  */
 
 // bei Änderungen Version eintragen!
-const MAJOR = 1;  // +1 wenn inkompatibel zur vorherigen Version
-const MINOR = 2;  // +1 wenn neue Funktionen implementiert
+const MAJOR = 2;  // +1 wenn inkompatibel zur vorherigen Version
+const MINOR = 0;  // +1 wenn neue Funktionen implementiert
 const PATCH = 0;  // +1 wenn Änderungen ohne neue Funktionen
 
 // letzte Veröffentlichung
@@ -21,6 +21,23 @@ const DEBUG = false;
 //
 // Ab hier nichts mehr konfigurieren!
 //
+
+/**
+ * Escapes a string for safe use with innerHTML.
+ *
+ * Converts characters like < > " ' & to their HTML entities to prevent injection.
+ *
+ * @param {string} unsafe - The raw string that may contain HTML.
+ * @returns {string} - The escaped, safe string.
+ */
+function escapeHTML(unsafe) {
+  return unsafe
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
 
 function start() {
      /* sollte onload vom Body des HTML Dokuments geladen werden
@@ -42,7 +59,7 @@ function start() {
 function goVersion() {
      // Es wird die Version des Programs generiert und die ID=version im HTML geaendert.
     const VERSION = MAJOR + "." + MINOR + "." + PATCH;
-    classVersion.innerHTML += `
+    version.innerHTML += `
      Script-Version: ${VERSION}
      ( <a href="https://www.ionivation.com">Ionivation.com</a> ) (C) 2022-2025 Adam Skotarczak
      `;
@@ -67,12 +84,11 @@ function calculate() {
      let y = Math.round(koordinateY.value);
 
      // Schickt die Daten zur Berechnung an die Funktion und schreibt in die ID (id="result") des HTML Dokuments
-     if (!isNaN(x) && !isNaN(y)){ // wenn x unc y Werte enthalten
-          result.innerHTML = `
-               ${goDistToCenter(x, y)} sector(s) to Center 0:0
-          `;
-          // koordinateX.value = ""; koordinateY.value = "";
+     if (!isNaN(x) && !isNaN(y)) {
+          const resultText = `${goDistToCenter(x, y)} sector(s) to Center 0:0`;
+          document.getElementById("result").textContent = resultText;
      }
+     // koordinateX.value = ""; koordinateY.value = "";
 }
 
 /**

@@ -6,12 +6,12 @@ const isDev = process.env.DEBUG === 'true'
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: parseInt(process.env.WINDOW_WIDTH || '820'),
-    height: parseInt(process.env.WINDOW_HEIGHT || '640'),
+    width: parseInt(process.env.WINDOW_WIDTH || '820', 10),
+    height: parseInt(process.env.WINDOW_HEIGHT || '640', 10),
     icon: path.join(__dirname, '../assets/icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      sandbox: false,            // Wichtig für Electron 25+
+      sandbox: true,            // Wichtig für Electron 25+ (ist per default true ab 25)
       contextIsolation: true,
       nodeIntegration: false
     }

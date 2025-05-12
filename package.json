@@ -24,7 +24,7 @@
   "homepage": "https://github.com/realAscot/AvorionDistanceCalculator#readme",
   "build": {
     "appId": "com.realascot.avoriondistance",
-    "productName": "Avorion Distance Calculator 2.0",
+    "productName": "Avorion Distance Calculator",
     "directories": {
       "output": "dist"
     },

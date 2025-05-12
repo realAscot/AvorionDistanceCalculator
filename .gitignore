@@ -2,7 +2,7 @@
 media/
 node_modules/
 dist/
-releases/
+release/
 tools/
 *.*.map
 
